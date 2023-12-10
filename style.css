@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #157B9C;
+}
+
+.container {
+    border-radius: 10px;
+    align-items: flex-end;
+    display: flex;
+    background: white;
+    padding: 60px 40px;
+    width: 1000px;
+    gap: 50px;
+}
+
+/* hangman pic */
+.hangman-box img {
+    max-width: 300px;
+}
+
+/* hangman font */
+.hangman-box h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
