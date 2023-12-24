@@ -3,22 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangman</title>
+    <title>Hangman JavaScript</title>
     <link rel="stylesheet" href="style.css">
-    <script src="myscripts.js"></script>
+    <script src="scripts/word-list.js" defer></script>
+    <script src="scripts/script.js" defer></script>
 </head>
 <body>
-    <!-- This is for the hangman tree -->
+    <div class="game-modal">
+        <div class="content">
+            <img src="/images/you lose.gif" alt="gif">
+            <h4>You Lose!</h4>
+            <p>The correct word was: <b>MOUTH</b></p>
+            <button class="play-again">Play Again</button>
+        </div>
+    </div>
+    <!-- this is for the hangman images -->
     <div class="container">
         <div class="hangman-box">
-            <img src="/images/hangman tree transparent.png" alt="hangman tree">
-            <h1>HANGMAN</h1>
+            <img src="images/hangman-0.svg" alt="hangman-img">
+            <h1>Hangman</h1>
         </div>
-
-        <!-- This is the boxes for letters -->
-        <div class="letter-box">
-            <ul class="querty-letters">
-                <li class="letter"></li>
+        <!-- this is for the lines for letters -->
+        <div class="game-box">
+            <ul class="word-display">
+                <li class="letter guessed">m</li>
                 <li class="letter"></li>
                 <li class="letter"></li>
                 <li class="letter"></li>
@@ -27,37 +35,20 @@
                 <li class="letter"></li>
             </ul>
 
-            <!-- This is for the hints and numbers of guesses left -->
             <h4 class="hint-text">
                 Hint:
-                <b>Blah b;ah b;ahhahdiosd.</b>
+                <b>blah blah blah</b>
+            </h4>
             <h4 class="guesses-text">
                 Guesses remaining:
                 <b>6</b>
             </h4>
-
-            <!-- created a QWERTY style keyboard -->
-            <div class="querty-keyboard">
+            <div class="qwerty-keyboard">
                 <button>Q</button><button>W</button><button>E</button><button>R</button><button>T</button><button>Y</button><button>U</button><button>I</button><button>O</button><button>P</button>
-                <button>A</button><button>S</button><button>D</button><button>F</button><button>G</button><button>H</button><button>J</button><button>K</button><button>L</button>
+                <button>A</button><button>S</button><button>D</button><button>F</button><button>G</button><button>H</button><button>J</button><button>K</button><button>L</button></br>
                 <button>Z</button><button>X</button><button>C</button><button>V</button><button>B</button><button>N</button><button>M</button>
             </div>
         </div>
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
 </body>
 </html>
