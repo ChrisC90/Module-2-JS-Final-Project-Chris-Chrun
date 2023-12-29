@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // store the selected word, guessed word, and wrong guesses //
     let selectedWord, guessedWord, wrongGuesses;
 
-    const hangmanImages = [
+    const hangmanImages = [ 
         'images/hangman-0.svg',
         'images/hangman-1.svg',
         'images/hangman-2.svg',

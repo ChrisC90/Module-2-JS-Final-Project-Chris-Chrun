@@ -29,6 +29,7 @@ body {
     height: auto;
     margin: 0 auto;
     background: no-repeat;
+    align-items: center;
 }
 
 #hangman-img {
