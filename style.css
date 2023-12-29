@@ -46,7 +46,7 @@ body {
 }
 
 #keyboard button.guessed {
-    background-color: #45a049; /* Adjust the color for guessed letters */
+    background-color: #45a049; 
     color: white;
 }
 
