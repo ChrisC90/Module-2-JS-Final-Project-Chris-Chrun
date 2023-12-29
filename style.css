@@ -28,7 +28,7 @@ body {
     max-width: 300px;  /* Adjust the maximum width as needed */
     height: auto;
     margin: 0 auto;
-    background: no-repeat
+    background: no-repeat;
 }
 
 #hangman-img {
@@ -45,18 +45,37 @@ body {
     margin-top: 20px;
 }
 
+#keyboard button.guessed {
+    background-color: #45a049; /* Adjust the color for guessed letters */
+    color: white;
+}
+
 button {
     font-size: 18px;
     padding: 10px 15px;
     margin: 5px;
     cursor: pointer;
-}
-
-#reset-button {
-    background-color: #4caf50;
+    background-color: #157B9C;
     color: white;
     border: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+button:hover {
+    background-color: #7edfff; 
+}
+
+#reset-button {
+    background-color: #157B9C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+}
+
+#reset-button:hover {
+    background-color: #7edfff; 
 }
 
 #message {
