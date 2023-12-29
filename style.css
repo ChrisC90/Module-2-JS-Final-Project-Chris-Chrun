@@ -25,14 +25,14 @@ body {
 }
 
 #hangman-image {
-    max-width: 300px;  /* Adjust the maximum width as needed */
+    max-width: 300px;  
     height: auto;
     margin: 0 auto;
     background: no-repeat;
 }
 
 #hangman-img {
-    max-width: 100%;  /* Ensure the image doesn't exceed the container's width */
+    max-width: 100%; 
     height: auto;
 }
 
@@ -81,5 +81,8 @@ button:hover {
 #message {
     margin-top: 20px;
     font-size: 18px;
-    color: #f44336;
+}
+
+.guesses-text b {
+    color: red; 
 }
