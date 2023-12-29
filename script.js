@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const guessesText = document.getElementById('guesses-text');
     const maxGuesses = 6;
 
-    // to start the game //
     function startGame() {
         // selecting random word //
         selectedWord = words[Math.floor(Math.random() * words.length)];
@@ -54,11 +53,9 @@ document.addEventListener('DOMContentLoaded', function () {
         createKeyboard();
         displayHint();
 
-        // reset messages and hide the reset button //
         message.textContent = '';
         resetButton.style.display = 'none';
 
-        // guesses remaining display //
         updateGuessesRemaining();
     }
 
@@ -67,7 +64,6 @@ document.addEventListener('DOMContentLoaded', function () {
         hangmanImage.style.backgroundImage = `url('${hangmanImages[wrongGuesses]}')`;
     }
 
-    // update the word display guessed letters //
     function updateWordDisplay() {
         wordDisplay.textContent = guessedWord.join(' ');
     }
