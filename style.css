@@ -45,11 +45,6 @@ body {
     margin-top: 20px;
 }
 
-#keyboard button.guessed {
-    background-color: #45a049; 
-    color: white;
-}
-
 button {
     font-size: 18px;
     padding: 10px 15px;
